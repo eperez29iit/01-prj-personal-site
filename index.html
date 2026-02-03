@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">YourName</a>
+
+        <nav class="nav">
+          <a href="#hero">Home</a>
+          <a href="#bio">Bio</a>
+          <a href="#skills">Skills</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="badge">Web Dev Student • Portfolio</p>
+            <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+            <p class="subtitle">
+              I’m building projects throughout my web development course — and
+              sharing them here as I learn.
+            </p>
+
+            <div class="hero-buttons">
+              <a class="btn primary" href="#skills">See my skills</a>
+              <a class="btn ghost" href="#bio">About me</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h2>Currently learning</h2>
+            <ul>
+              <li>HTML & CSS fundamentals</li>
+              <li>Responsive layouts</li>
+              <li>JavaScript basics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bio -->
+      <section id="bio" class="section">
+        <div class="container">
+          <h2 class="section-title">Bio</h2>
+          <p class="section-lead">
+            Write a short introduction about yourself and what kind of projects
+            you want to build.
+          </p>
+
+          <div class="bio-grid">
+            <div class="panel">
+              <h3>About me</h3>
+              <p>
+                I’m a student learning web development. I enjoy building clean,
+                modern interfaces and improving one project at a time.
+              </p>
+              <p>
+                Outside of coding, I’m into: <strong>your hobbies</strong>,
+                <strong>music</strong>, and <strong>sports</strong>.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3>Goals</h3>
+              <ul class="checklist">
+                <li>Build 5+ portfolio projects this semester</li>
+                <li>Learn responsive design best practices</li>
+                <li>Get comfortable with JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-lead">
+            Add or remove skill cards as you learn new tools.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill">
+              <h3>HTML</h3>
+              <p>Semantic structure, forms, accessibility basics.</p>
+            </div>
+
+            <div class="skill">
+              <h3>CSS</h3>
+              <p>Flexbox, spacing, typography, responsive layouts.</p>
+            </div>
+
+            <div class="skill">
+              <h3>JavaScript</h3>
+              <p>DOM basics, simple interactions (coming soon!).</p>
+            </div>
+
+            <div class="skill">
+              <h3>Tools</h3>
+              <p>VS Code, Git/GitHub basics, browser dev tools.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Your Name</p>
+        <p class="footer-note">Built with HTML + CSS</p>
+      </div>
+    </footer>
+  </body>
 </html>
